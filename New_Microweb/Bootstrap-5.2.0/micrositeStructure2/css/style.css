@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+/*============Skiny Scroller ============*/
+::-webkit-scrollbar {width:5px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px #ccc;  border-radius: 10px;}
+::-webkit-scrollbar-thumb {background: #fff;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: #18BBE9; }
+/*============Capgemini colors=================*/
+:root {
+    --cg-blue: #0070ad;
+    --cg-info: #12abdb;
+    --cg-purple: #2b0a3d;
+    --cg-darkGray: #272936;
+    --cg-gray: #ececec;
+    --cg-green: #2da657;
+    --cg-teal: #00929b;
+    --cg-darkTeal: #0f434a;
+    --cg-red: #ff304e;
+    --cg-orange: #ff9b29;
+    --cg-pink: #b92980;
+    --cg-purpul: #590a43;
+    --cg-white: #fff;
+    --cg-black:#000;
+  }
+
+/*=============== Navbar ===================*/
+header{margin-bottom: 75px;}
+header .navbar-nav .nav-link i{display: block; text-align: center}
+header .navbar-nav .nav-link {  color:var(--cg-info);}
+header .navbar-nav .nav-link {padding-left: 1em !important;}
+header .navbar{background: #fff; z-index:999;    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);}     
+header .navbar-nav {-ms-flex-pack: end;justify-content: flex-end;margin-left: auto;} 
+header .navbar-nav .nav-link.active { color:var(--cg-red);}
+header .navbar-brand{width:30%;}
+header .navbar-brand img{width:50%;}
+.nav-item.active{border-top: 2px solid var(--cg-info); border-bottom: 2px solid var(--cg-info); transition: 0.5s all ease-in-out;}
+
+
+/*=============== Common CSS ===================*/
+body { font-family: 'Ubuntu', sans-serif; padding: 0; margin:0; position: relative;}
+section{min-height:600px; padding:100px 0;}
+section p{font-size:.89em; font-weight:300; color: var(--cg-darkGray);}
+.inner .heading{position: relative;}
+.inner .heading::before{position: absolute; content:''; bottom:-20px; width: 20%; height:5px; left:40%; background-color: var(--cg-info);}
+.inner .heading::after{position: absolute; content:''; bottom:-28px; width:25px; height:25px; border-radius:50%; left:49%; background-color: var(--cg-white); border:solid 1px var(--cg-info)}
+.inner .heading h1{text-align: center; text-transform: uppercase; font-size:2.5em; font-weight:300; color: var(--cg-blue); }
+.inner .heading p{text-align: center; font-size:.85em; font-weight:300; color: var(--cg-black); }
+
+/*============== home One  ====================*/
+.homeOne{background-color: #cdf0fb78}
+.homeOne .card{border: 0;box-shadow: 0 2px 15px -3px rgb(0 0 0 / 7%), 0 10px 20px -2px rgb(0 0 0 / 4%);}
+.homeOne .sub_right{position: relative;}
+.homeOne .sub_right img{width:100%;}
+.homeOne .sub_right .w_circle{right: 15px;height: 14%;top: 126px;width: 14%;border-radius: 50% !important;}
+.homeOne .sub_right .w_c {left: 14px;height: 20%;bottom: 126px;width: 20%;border-radius: 50% !important;background: #1f5ee2;}
+.homeOne .sub_right img:nth-child(2) {z-index: -9;bottom: 105px;width: 15%;left: 0px;animation: MoveUpDown 3s linear infinite;}
+.homeOne .sub_right img:nth-child(3) {z-index: -9;top: 102px;animation: MoveUpDown 2s linear infinite;width: 15%;right: 0px;}
+@keyframes MoveUpDown {0%, 100% {transform: translateY(0);}50% {transform: translateY(-10px);}}
+
+/*============== home Two  ====================*/
+.homeTwo{background-color: var(--cg-white);}
+.homeTwo .sub_right .card .icons_n{color: #1f5ee2;}
+
+
+/*============== home Three  ====================*/
+.homeThree{background-color: var(--cg-darkGray);}
+.homeThree .card{background: none;}
+.homeThree .card img{width: 5%;}
+.homeThree .card ul li i{color: #0d6efd;}
+
+/*============== home Four  ====================*/
+.homeFour {background-image: url(/images/event-h-bg.jpg);background-size: cover;BACKGROUND-REPEAT: no-repeat;}
+.homeFour .sub_right{position: relative; overflow: auto;margin-top: 15px;}
+.homeFour .sub_right img{width: 85%;}
+.homeFour .sub_right .img_q {width: 17%;bottom: 63px;position: absolute;}
+.homeFour .sub_left{position: relative;}
+.homeFour .sub_left .card {width: 33px;border: 6px solid #f90;height: 33px;bottom: 86px;background: none;left: -24px;}
+.homeFour .sub_left button{background: #dc3545;}
+.homeFour .sub_left .btn_b{background: none; border: 1px solid #dc3545;}
+.homeFour .sub_left .circle_f {background-image:linear-gradient(to right, rgb(255 255 255), rgb(255 37 94));width: 100px;right: 115px;top: 13px;height: 100px;border-radius: 50%;}
+
+/*============== home Five  ====================*/
+.homeFive{background-color: var(--bs-gray-100);}
+.homeFive .card{background: none; display: inline;}
+.homeFive .card .w-33 { width: 30%;float: left;}
+.homeFive .card .w-33 .ga_1{border-radius: 50%;background: #e1d1ff;color: #6f42c1;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 .ga_2{background: #c2ffe3;color: #198754;border-radius: 50%;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 .ga_3{background: rgb(255 240 197);color: #ffc107;border-radius: 50%;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 .ga_4{background: #c0daff;color: #0d6efd;border-radius: 50%;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 .ga_5{background: #ffe9d6;color: #fd7e14;border-radius: 50%;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 .ga_6{background: #ffd0e8;color: #d63384;border-radius: 50%;width: 47px;line-height: 2px;height: 35px;}
+.homeFive .card .w-33 i {color:#6f42c1;}
+
+
+
+/*============== Footer  ====================*/
+.footer{width:100%; position: fixed; height:50px; bottom:0; padding:10px 0; text-align: center; background: #eee; }
+.footer p{margin-bottom:0;}
+
+/*============== Responsive media query  ====================*/
+@media only screen and (max-width:620px) {
+.inner .heading h1 {font-size:1.5em; font-weight:500; color: var(--cg-pink);}
+.inner .heading::before {display: none;}
+.footer {background-color: var(--cg-darkGray); }
+.footer p{color: var(--cg-white) !important;}
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+  .w-50{width:100% !important;}
+  .logo_cg{width: 100% !important;}
+  .homeOne .col{margin-top: 5px !important;}
+  .homeThree .card ul{padding-left: 0px !important;}
+  .homeOne .sub_right .w_c {left: -11px;bottom: 157px;}
+  .homeOne .sub_right .w_circle {top: 207px;}
+  .homeFour .sub_left .circle_f {width: 75px;right: 50px;top: 13px;height: 75px;}
+}
+
+
+

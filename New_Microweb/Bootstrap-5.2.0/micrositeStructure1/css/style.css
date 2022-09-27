@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+/*============Skiny Scroller ============*/
+::-webkit-scrollbar {width:5px;}
+::-webkit-scrollbar-track {box-shadow: inset 0 0 5px #ccc;  border-radius: 10px;}
+::-webkit-scrollbar-thumb {background: #fff;border-radius: 10px;}
+::-webkit-scrollbar-thumb:hover {background: #18BBE9; }
+/*============Capgemini colors=================*/
+:root {
+    --cg-blue: #0070ad;
+    --cg-info: #12abdb;
+    --cg-purple: #2b0a3d;
+    --cg-darkGray: #272936;
+    --cg-gray: #ececec;
+    --cg-green: #2da657;
+    --cg-teal: #00929b;
+    --cg-darkTeal: #0f434a;
+    --cg-red: #ff304e;
+    --cg-orange: #ff9b29;
+    --cg-pink: #b92980;
+    --cg-purpul: #590a43;
+    --cg-white: #fff;
+    --cg-black:#000;
+  }
+
+/*============ Calling colors =================*/
+.cBlue{color: var(--cg-blue);}
+.cBgBlue{background-color: var(--cg-blue);}
+
+/*=============== Navbar ===================*/
+header{margin-bottom: 75px;}
+header .navbar-nav .nav-link i{display: block; text-align: center}
+header .navbar-nav .nav-link {  color:var(--cg-info);}
+header .navbar-nav .nav-link {padding-left: 1em !important;}
+header .navbar{background: #fff; z-index:999;    box-shadow: 0 0.375rem 1.5rem 0 rgb(140 152 164 / 13%);}     
+header .navbar-nav {-ms-flex-pack: end;justify-content: flex-end;margin-left: auto;} 
+header .navbar-nav .nav-link.active { color:var(--cg-red);}
+header .navbar-brand{width:30%;}
+header .navbar-brand img{width:50%;}
+.nav-item.active{border-top: 2px solid var(--cg-info); border-bottom: 2px solid var(--cg-info); transition: 0.5s all ease-in-out;}
+
+/*=============== Common CSS ===================*/
+body { font-family: 'Ubuntu', sans-serif; padding: 0; margin:0; position: relative;}
+section{min-height:600px; padding:100px 0;}
+section p{font-size:.89em; font-weight:300; color: var(--cg-darkGray);}
+.inner .heading{position: relative;}
+.inner .heading::before{position: absolute; content:''; bottom:-20px; width: 20%; height:5px; left:40%; background-color: var(--cg-info);}
+.inner .heading::after{position: absolute; content:''; bottom:-28px; width:25px; height:25px; border-radius:50%; left:49%; background-color: var(--cg-white); border:solid 1px var(--cg-info)}
+.inner .heading h1{text-align: center; text-transform: uppercase; font-size:2.5em; font-weight:300; color: var(--cg-blue); }
+.inner .heading p{text-align: center; font-size:.85em; font-weight:300; color: var(--cg-black); }
+
+/*============== Team One  ====================*/
+.teamOne{background-color: var(--cg-gray);}
+.teamOne .card h3{font-size: 20px;color: #4c4b4b;}
+.teamOne .card p{font-style: italic;font-weight: 400;font-size: 15px;color: var(--cg-darkGray);}
+.teamOne .card{padding:0.45rem !important;}
+.teamOne .card img{width: 165px; height: 165px; margin: auto;}
+.teamOne .card span{font-size: 14px;font-weight: 500;}
+
+/*============== Team Two  ====================*/
+.teamtwo{background-color: #0070AD; position: relative; z-index: -9;}
+.teamtwo .bg_white {background: #FFFFFF;width: 100%;min-height: 500px; padding: 25px; z-index: 99;}
+.teamtwo .bg_white .left_card{width:40%; float:left; margin: auto; text-align: center;}
+.teamtwo .bg_white .left_card img{width:75%; height: 75%;}
+.teamtwo .bg_white .right_card{width:60%; float:left;}
+.teamtwo .bg_white .right_card h3{font-size:1.75rem;}
+.teamtwo .bg_white .right_card p{color: #FF304D !important;font-weight: 500;}
+.teamtwo .bg_white .right_card p:nth-child(2){color: #898585;font-style: italic;font-size: 14px;}
+.teamtwo .bg_white .right_card span{color:#898585;font-style: italic;font-size: 14px; display: block;}
+.teamtwo .bg_layer{position: absolute;top: 0px;z-index: -9;width: 100%;height: 150px;background: #272936; top: 252px;}
+
+/*============== Team Three  ====================*/
+.teamthree{background-color:#fff}
+.teamthree .bg-light{margin: auto;}
+.teamthree img{width:170px; height:170px;}
+.teamthree div{border-radius: 4%;}
+.teamthree div:nth-child(2){background: #83c3d1ad;}
+.teamthree div span{display: block;color: #55bbd4c2;}
+
+
+/*============== Team Four  ====================*/
+.teamfour{background-color:#ECECEC;}
+.teamfour .bg-white{border-top-left-radius:137px; border-top-right-radius:137px;}
+.teamfour .bg-white img{border-top-left-radius:137px; border-top-right-radius:137px;}
+.teamfour h4{font-size: 14px;color: #848181;}
+.teamfour span{color: #12ABDB;}
+.teamfour p{font-size: .89em;font-weight: 300;color: var(--cg-darkGray);}
+.teamfour p i{background: #aad5eb;padding: 6px;border-radius: 50%;color: #fff;}
+.teamfour button{background: #12ABDB; color: #ECECEC; border: none; border-radius: 0px; width: 100%;}
+
+
+
+
+/*============== Team Five  ====================*/
+.teamfive{background-color: #fff; border-bottom: 1px solid #000;}
+.teamfive img{width:200px;}
+.teamfive h3{color: #197d8b;font-size: 19px;}
+.teamfive .line_bar {width: 66%;border-bottom: 2px solid #197d8b;margin: auto;}
+.teamfive span{font-weight: bold;font-size: 15px;}
+.teamfive p{color: #000;font-weight: 400;}
+.teamfive img{width: 200px; height: 200px;}
+.teamfive i:nth-child(1){ border: 1px solid #0070ad !important;color: #0070ad;padding: 8px;border-radius: 50%;}
+.teamfive i:nth-child(2){ border: 1px solid #ff304e !important;color: #ff304e;padding: 8px;border-radius: 50%;}
+.teamfive i:nth-child(3){ border: 1px solid #12abdb !important;color: #12abdb;padding: 8px;border-radius: 50%;}
+
+
+
+/*============== Team Six  ====================*/
+.teamsix{background-color: #fff; border-bottom: 2px solid #ECECEC;}
+.teamsix .bg-blue{background: #0070AD; position: relative;}
+.teamsix .card{background: #0070AD; border-radius: 0px; border: 1px solid #0070AD;}
+.teamsix .bg-blue button{border: none; width: 100%; background:#00527e;}
+.teamsix .bg-blue img{width: 200px; border-radius: 50%;}
+.teamsix .bg-blue span{position: absolute; background: #00527e; color: #fff; left: 20%; bottom: 0px;}
+.teamsix .card p{color:#fff; font-weight: 400;}
+
+
+/*============== Team Seven  ====================*/
+.teamseven{background-color: #fff;}
+.teamseven img {width:200px;}
+.teamseven p i{background: #00929b;color: #fff;border-radius: 50%;}
+.teamseven .card{border: 3px solid #00929b; position: relative; border-radius: 0px;}
+.teamseven .card h3{color: #00929b;}
+.teamseven .card span{color: #00929b; font-size: 14px;}
+.teamseven .card p{color: #878787;font-weight: 400; margin-bottom: 0px;}
+.teamseven .card .sub_card {position: absolute;height: 15px;bottom: -8px;left: 13%;width: 75%;background: white;}
+.teamseven .card .sub_card:nth-child(1) {position: absolute;z-index: 9;height: 15px;top: -9px;left: 13%;width: 75%;background: white;}
+
+/*============== Team Eight  ====================*/
+.teamseight{background: #ececec;}
+.teamseight .bg-white {background: #fff;width: 100%;min-height: 450px;}
+.teamseight .bg-white .card{position: relative; border: none; background: none !important;}
+.teamseight .bg-white .card p i:nth-child(1){position: absolute;color: #00929b;right: 0px;top: 65px;width: 35px;border: 2px solid #00929b;border-radius: 8px;}
+.teamseight .bg-white .card p i:nth-child(2){position: absolute;color: #00929b;right: 0px;top: 115px;width: 35px;border: 2px solid #00929b;border-radius: 8px;}
+.teamseight .bg-white .card p i:nth-child(3){position: absolute;color: #00929b;right: 0px;top: 165px;width: 35px;border: 2px solid #00929b;border-radius: 8px;}
+.teamseight .bg-white .card p i{position: absolute;color: #00929b;right: 0px;width: 35px;top: 15px;border: 2px solid #00929b;border-radius: 8px;}
+.teamseight .bg-white .card img{width: 200px;}
+.teamseight .bg-white .card p{font-weight: 600; text-align: center;}
+.teamseight .bg-white .sub_card button{width: 100%; background: #00929b; color: #fff; border: none; border-radius: 0px;}
+.teamseight .bg-white .sub_card p{text-align: left;}
+.teamseight .bg-white .sub_card {border-right: 3px solid #00929b;}
+.teamseight .bg-white .sub_card .bg-blue {z-index: 9999;position: absolute;width: 12px;height: 12px;background: #00929b;border-radius: 50%;bottom: 6px;right: 4px;}
+
+/*============== Footer  ====================*/
+.footer{width:100%; position: fixed; height:50px; bottom:0; padding:10px 0; text-align: center; background: #0070AD; }
+.footer p{margin-bottom:0; color: #fff}
+
+/*============== Responsive media query  ====================*/
+@media only screen and (max-width:620px) {
+.inner .heading h1 {font-size:1.5em; font-weight:500; color: var(--cg-pink);}
+.inner .heading::before {display: none;}
+.footer {background-color: var(--cg-darkGray); }
+.footer p{color: var(--cg-white) !important;}
+}
+
+/*------------------- Mobiles Media Query ------------------*/
+
+@media screen and (min-width:320px) and (max-width:767px){
+  .w-25{width: 100%; margin-bottom: 15px;}
+  header .navbar-brand img {width: 100%;}
+  .nav-item.active{border-top: none; border-bottom:none; color: #12abdb;}
+  .teamsix .bg-blue span{left: 32%;}
+  .teamseight .bg-white .card p i{right: 12px;}
+  .teamseight .bg-white .card p i:nth-child(1){right: 12px;}
+  .teamseight .bg-white .card p i:nth-child(2){right: 12px;}
+  .teamseight .bg-white .card p i:nth-child(3){right: 12px;}
+  .teamseight .bg-white .card img{margin: auto;}
+  .mob_b{background:#12ABDB; color:#fff}
+  .teamsix .bg_white .five_sec span{left: 28%;}
+}
+
+/*------------------- IPad Media Query ------------------*/
+@media screen and (device-width: 768px) and (device-height: 1024px){
+
+.teamtwo .bg_white .full_card img {width: 100%;height: 100%;}
+.w-25 img {border-radius: 50%;width: 100%;height: 100%;}
+.teamthree .bg_white .b_sm{padding:15px;}
+.teamfour .bg_white .sec_four img {width: 100%;}
+.teamfive .bg_white .five_b img {width: 100%;}
+.teamsix .bg_white .five_sec img {width: 100%;}
+.teamsix .bg_white .five_sec span {left: -3%;top: 193px;}
+.teamseven .bg_white .seven_b img {width: 100%;}
+.teamseight .bg_white .eight-b img {width: 74%;}
+.teamseven .bg_white .seven_b .sub_border .sub_br{left: 7%;}
+.teamseven .bg_white .seven_b .sub_border .sub_br:nth-child(1) {bottom: -275px;left: 14px;}
+.teamseight .bg_white .eight-b i{padding: 6px 9px;}
+.teamseight .bg_white .eight-b i:nth-child(1) {top: 44px; padding: 6px 9px;}
+.teamseight .bg_white .eight-b i:nth-child(2) {top: 78px; padding: 6px 9px;}
+.teamseight .bg_white .eight-b i:nth-child(3) {top: 111px; padding: 6px 9px;}
+
+}
+
+
+

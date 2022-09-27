@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Microsite Reposetory</title>
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  
+  <div class="col-md-12 Main_Section">
+     <div class="col-md-6 left_card">
+      <img src="images/Logo_CapG_White.png" alt="cg_logo" title="cg_logo" class="img-responsive cg_logo">
+        <div class="sub_card">
+          <p>WORLD PROPERTY & CASUALTY</p>
+          <p>INSURANCE REPORT</p>
+          <a href="#" target="_blank"><img src="images/linkIcon.png" class="link_i" alt="link_i" title="link_i"></a>
+        </div>
+        
+     </div>
+
+     <div class="col-md-6 right_card">
+      <div class="sub_card">
+        <p>WORLD LIFE & HEALTH</p>
+        <p>INSURANCE REPORT</p>
+        <a href="#" target="_blank"><img src="images/linkIcon.png" class="link_i" alt="link_i" title="link_i"></a>
+      </div>
+      <img src="images/WIRWEBDESIGNS-06.png" class="web_logo" alt="web_logo"  title="web_logo">
+     </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+           <p class="text-muted small">Copyright © 2022 Capgemini. All rights reserved.</p>
+        </div>
+      </div>
+     
+    </div>
+  </footer>
+  <!-- ========== END FOOTER ========== -->
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({
+     reset: true ,
+     distance:'60px',
+     duration:2500,
+     delay:400
+     });
+
+
+
+    ScrollReveal().reveal('.cg_logo', { delay: 500,origin:'top' });
+    ScrollReveal().reveal('.web_logo', { delay: 500,origin:'bottom' });
+     ScrollReveal().reveal('.Main_Section .left_card .sub_card', { delay: 500,origin:'left' });
+     ScrollReveal().reveal('.Main_Section .right_card .sub_card', { delay: 500,origin:'right' });
+   </script>
+</body>
+</html>
